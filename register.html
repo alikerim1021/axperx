@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Kayıt Ol - AXPERX</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: url('standard.gif') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      padding-top: 80px;
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      max-width: 400px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px red;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px 0;
+      width: 90%;
+      border-radius: 5px;
+      border: none;
+    }
+    button {
+      background-color: red;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: darkred;
+    }
+    a.btn {
+      display: inline-block;
+      margin-top: 15px;
+      color: white;
+      background: #222;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    a.btn:hover {
+      background: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Kayıt Ol</h2>
+    <form method="POST" action="register_success.html">
+      <input type="text" name="kullanici_adi" placeholder="Kullanıcı Adı" required><br>
+      <input type="email" name="email" placeholder="Gmail Adresi" required><br>
+      <input type="password" name="sifre" placeholder="Şifre" required><br>
+      <input type="password" name="sifre_tekrar" placeholder="Şifre (Tekrar)" required><br>
+      <button type="submit">Kayıt Ol</button>
+    </form>
+    <a href="login.html" class="btn">Giriş Yap</a>
+  </div>
+</body>
+</html>

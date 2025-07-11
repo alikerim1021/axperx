@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Giriş - AXPERX</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      background: url('standard.gif') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+    .login-container {
+      width: 100%;
+      max-width: 400px;
+      margin: 100px auto;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px red;
+      text-align: center;
+    }
+    .login-container h2 { margin-bottom: 20px; color: red; }
+    .login-container input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    .login-container button, .btn {
+      padding: 10px 20px;
+      background-color: red;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .login-container button:hover, .btn:hover {
+      background-color: darkred;
+    }
+    .profile-menu {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+    .profile-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #111;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      border-bottom: 1px solid #333;
+    }
+    .dropdown-content a:hover {
+      background-color: #333;
+    }
+    .profile-menu:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  
+  </div>
+
+  <div class="login-container">
+    <h2>Admin Girişi</h2>
+    <input type="text" id="username" placeholder="Kullanıcı Adı">
+    <input type="password" id="password" placeholder="Şifre">
+    <button onclick="login()">Giriş Yap</button><br><br>
+    <a href="login.html" class="btn">Normal Giriş</a>
+  </div>
+
+  <script>
+    function login() {
+      const user = document.getElementById('username').value;
+      const pass = document.getElementById('password').value;
+      if (user === 'axperx_root_9381' && pass === '@Xper!2025+') {
+        window.location.href = 'admin_panel.html';
+      } else {
+        alert('Hatalı kullanıcı adı veya şifre!');
+      }
+    }
+  </script>
+</body>
+</html>

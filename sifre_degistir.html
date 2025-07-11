@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Şifre Değiştir - AXPERX</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: url('standard.gif') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      max-width: 400px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px red;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px 0;
+      width: 90%;
+      border-radius: 5px;
+      border: none;
+    }
+    button {
+      background-color: red;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Şifre Değiştir</h2>
+    <form method="POST" action="change_password.php">
+      <input type="password" name="eski_sifre" placeholder="Eski Şifre" required><br>
+      <input type="password" name="yeni_sifre" placeholder="Yeni Şifre" required><br>
+      <button type="submit">Şifreyi Değiştir</button>
+    </form>
+  </div>
+</body>
+</html>
